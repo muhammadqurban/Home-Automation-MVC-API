@@ -1,0 +1,183 @@
+{%extends "base_layout.html"%}
+{%block content%}
+	<br><br><br>
+
+	<div class="container">
+		<h4 style="color: white;">Manage Alerts:	</h4>
+	</div>
+	<br>	
+	<section class="container" id="navContainer">
+		<div class="row">
+			<div class="col" id="sideContent">
+				<div class="container">
+						<div class="tab-content">
+							<div id="register" class="tab-pane fade active show" style="padding: 20px;">
+								<br>
+								<h1 style="color: white;">Create New Alert:</h1>
+								<br>
+								<form class="form addUserForm">
+
+									<div class="form-group">
+										<label for="isBroadcast">Send to all users:</label>
+										<br>
+										<div class="container">
+											<label for="isBroadcastYes">Yes:</label>
+											<input type="radio" name="isBroadcast" value="Yes" id="isBroadcastYes">
+											&nbsp;&nbsp;
+											<label for="isBroadcastNo">No:</label>
+											<input type="radio" name="isBroadcast" value="No" id="isBroadcastNo">
+										</div>
+										
+									</div>
+									<div class="form-group">
+										<label for="loadName">Select User:</label>
+										<select name="selectUser" class="form-control">
+											<option value="1">Umair</option>
+											<option value="2">Hashir</option>
+											<option value="3">Umer</option>
+										</select>
+									</div>
+
+									<div class="form-group">
+										<label for="loadType">Alert Message:</label>
+										<!-- <input type="email" name="loadType" class="form-control" id="loadType" required> -->
+										<!-- <select name="" class="form-control">
+											<option value="1">Light</option>
+											<option value="2">Door</option>
+											<option value="3">Fan</option>
+											<option value="4">AC/Heater</option>
+										</select> -->
+										<textarea class="form-control" rows="10"></textarea>
+									</div>
+
+									<div></div>
+									<div class="form-group">
+										<button type="submit" class="btn btn-lg btn-success">Send Now</button>
+									</div>
+
+								</form>
+								<br>
+							</div>
+
+							<div id="viewUsers" class="tab-pane fade">
+								<br><br>
+								<!-- <div class="card" style="width: 100%;">
+                  <div class="card-body">
+                  	<div class="card-img-top">
+                  		<img src="#" class="img img-responsive ">
+                  	</div>
+                       <div class="table-responsive m-t-40"> 
+                          <table id="example" class="display nowrap table table-responsive table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                              <thead>
+                                  <tr>
+                                      <th>ID</th>
+                                      <th>Name</th>
+                                      <th>Email</th>
+                                      <th>Status</th>
+                                      <th>Actions</th>
+                                  </tr>
+                              </thead>    
+                              <tbody>
+                                 <tr>
+                                 	<td>01</td>
+                                 	<td style="width: 200px;">Hashir Shah</td>
+                                 	<td>hashishah00@gmail.com</td>
+                                 	<td><span class="bg-success" style="padding: 10px 4ox;">Active</span></td>
+                                 	<td style="width: 400px;">
+                                 		<a class="btn btn-sm bg-success" href="#"> <i class="fab fa-accessible-icon"></i> Previliges</a>
+                                 		<a class="btn btn-sm  bg-warning" href="#"> <i class="fas fa-comments"></i> chat</a>
+                                 		<a class="btn btn-sm bg-danger" href="#"> <i class="fas fa-user-lock"></i> Block</a> &nbsp;
+                                 	</td>
+                                 </tr>
+                                 <tr>
+                                 	<td>02</td>
+                                 	<td>Hazrat Umer</td>
+                                 	<td>hashishah00@gmail.com</td>
+                                 	<td><span class="bg-success">Active</span></td>
+                                 	<td>
+                                 		<a class="btn btn-sm bg-success" href="#"> <i class="fab fa-accessible-icon"></i> Previliges</a>
+                                 		<a class="btn btn-sm  bg-warning" href="#"> <i class="fas fa-comments"></i> chat</a>
+                                 		<a class="btn btn-sm bg-danger" href="#"> <i class="fas fa-user-lock"></i> Block</a>
+                                 	</td>
+                                 </tr>
+                                 <tr>
+                                 	<td>03</td>
+                                 	<td>Umair Ahmad</td>
+                                 	<td>hashishah00@gmail.com</td>
+                                 	<td><span class="bg-success">Active</span></td>
+                                 	<td>
+                                 		<a class="btn btn-sm bg-success" href="#"> <i class="fab fa-accessible-icon"></i> Previliges</a>
+                                 		<a class="btn btn-sm  bg-warning" href="#"> <i class="fas fa-comments"></i> chat</a>
+                                 		<a class="btn btn-sm bg-danger" href="#"> <i class="fas fa-user-lock"></i> Block</a>
+                                 		
+                                 	</td>
+                                 </tr>
+                              </tbody>
+                          </table>
+
+                      </div>
+                  </div>
+	              </div> -->
+
+	              <div class="row">
+	              	<div class="col">
+	              		<div class="card">
+	              			<div class="card-body">
+	              				<div class="card-img-top">
+	              					<img src="#" class="img img-responsive">
+	              				</div>
+	              			</div>
+	              			<div class="card-footer">Load Name</div>
+	              		</div>
+	              	</div>
+	              	<div class="col">
+	              		<div class="card">
+	              			<div class="card-body">
+	              				<div class="card-img-top">
+	              					<img src="#" class="img img-responsive">
+	              				</div>
+	              			</div>
+	              			<div class="card-footer">Load Name</div>
+	              		</div>
+	              	</div>
+	              	<div class="col">
+	              		<div class="card">
+	              			<div class="card-body">
+	              				<div class="card-img-top">
+	              					<img src="#" class="img img-responsive">
+	              				</div>
+	              			</div>
+	              			<div class="card-footer">Load Name</div>
+	              		</div>
+	              	</div>
+	              </div>
+							</div>
+
+							<div id="deleteUser" class="tab-pane fade">
+								<br><br>
+								<form class="form deleteUserForm" action="#" method="POST">
+									<h1>Delete Loads:</h1>
+									<br><br>
+									<div class="form-group">
+										<label for="userSelect">Select Load</label>
+										<select class="form-control">
+											<option value="1">Room Fan</option>
+											<option value="2">Room Light</option>
+											<option value="3">Store Fan</option>
+											<option value="4">Store Light</option>
+										</select>
+									</div>
+									<div class="form-group">
+										<input type="submit" name="submit" value="Delete Now" class="btn btn-lg bg-success">
+									</div>
+								</form>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<br><br><br>
+
+{%endblock%}

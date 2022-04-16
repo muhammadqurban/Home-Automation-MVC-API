@@ -1,0 +1,89 @@
+{%extends "base_layout.html"%}
+{%block content%}
+	<br><br><br>
+	<div class="container" style="color: white;">
+		<h4 style="display: inline;">Actions History:	</h4> 
+		&nbsp;&nbsp;&nbsp;
+		<button class="btn btn-sm btn-success" onclick="download_table_as_csv('myTable');">Export</button>
+		&nbsp; 
+		<button class="btn btn-sm btn-success" onclick="window.print()">Print</button>
+		<br><br>
+	</div>
+	<section class="container" id="navContainer" style="color: white;">
+		<br>
+		<table class="table table-responsive table-stripped table-hover" id="myTable" style="width: 100%;">
+			<thead>
+				<tr>
+					<th>User ID</th>
+					<th>Action Name</th>
+					<th>Action Page</th>
+					<th>Action Time</th>
+					<th>user IP</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						01
+					</td>
+					<td>
+						Added Camera
+					</td>
+					<td>Manage Streams</td>
+					<td>
+						05:10:31 am
+					</td>
+					<td>
+						192.168.43.21
+					</td>
+				</tr>
+				<tr>
+					<td>
+						01
+					</td>
+					<td>
+						Added Camera
+					</td>
+					<td>Manage Streams</td>
+					<td>
+						05:10:31 am
+					</td>
+					<td>
+						192.168.43.21
+					</td>
+				</tr>
+				<tr>
+					<td>
+						01
+					</td>
+					<td>
+						Added Camera
+					</td>
+					<td>Manage Streams</td>
+					<td>
+						05:10:31 am
+					</td>
+					<td>
+						192.168.43.21
+					</td>
+				</tr>
+				<tr>
+					<td>
+						01
+					</td>
+					<td>
+						Added Camera
+					</td>
+					<td>Manage Streams</td>
+					<td>
+						05:10:31 am
+					</td>
+					<td>
+						192.168.43.21
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</section>
+	<br><br><br>
+{%endblock%}

@@ -1,0 +1,159 @@
+{%extends "base_layout.html"%}
+{%block content%}
+<br><br><br>
+<div class="container">
+	<h4 style="color: white;">Manage Streams:	</h4>
+</div>
+<br>	
+<section class="container" id="navContainer">
+	<div class="row">
+		<div class="col" id="sideContent">
+			<div class="container">
+					<div class="tab-content">
+						<div class="tab-pane fade active show" style="color: white;">
+							<br>
+							<h4>Now Streaming (Camera 1):</h4>
+							<h5>Location (ABC)</h5>
+							<br>
+							
+							<div class="streamFrame">
+								<img class="img img-responsive" src="{{ url_for('video') }}" style="max-width: 100%;"></img>
+							</div>
+
+							<div class="streamControl">
+								<a href="#carouselExampleControls" role="button">
+								  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								  <span class="sr-only">Previous</span>
+								</a>
+
+								<a href="#carouselExampleControls" role="button" style="float: right;">
+								  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+								  <span class="sr-only">Next</span>
+								</a>
+							</div>
+							<br><br>
+							<div class="text-center">
+								<a href="{{url_for('stopVideo')}}" class="btn btn-lg btn-success">Stop Streaming</a>
+							</div>
+							<br><br>
+						</div>
+						<!-- <div id="viewUsers" class="tab-pane fade">
+							<br><br>
+							<div class="card" style="width: 100%;">
+                <div class="card-body">
+                	<div class="card-img-top">
+                		<img src="#" class="img img-responsive ">
+                	</div>
+                     <div class="table-responsive m-t-40"> 
+                        <table id="example" class="display nowrap table table-responsive table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>    
+                            <tbody>
+                               <tr>
+                               	<td>01</td>
+                               	<td style="width: 200px;">Hashir Shah</td>
+                               	<td>hashishah00@gmail.com</td>
+                               	<td><span class="bg-success" style="padding: 10px 4ox;">Active</span></td>
+                               	<td style="width: 400px;">
+                               		<a class="btn btn-sm bg-success" href="#"> <i class="fab fa-accessible-icon"></i> Previliges</a>
+                               		<a class="btn btn-sm  bg-warning" href="#"> <i class="fas fa-comments"></i> chat</a>
+                               		<a class="btn btn-sm bg-danger" href="#"> <i class="fas fa-user-lock"></i> Block</a> &nbsp;
+                               	</td>
+                               </tr>
+                               <tr>
+                               	<td>02</td>
+                               	<td>Hazrat Umer</td>
+                               	<td>hashishah00@gmail.com</td>
+                               	<td><span class="bg-success">Active</span></td>
+                               	<td>
+                               		<a class="btn btn-sm bg-success" href="#"> <i class="fab fa-accessible-icon"></i> Previliges</a>
+                               		<a class="btn btn-sm  bg-warning" href="#"> <i class="fas fa-comments"></i> chat</a>
+                               		<a class="btn btn-sm bg-danger" href="#"> <i class="fas fa-user-lock"></i> Block</a>
+                               	</td>
+                               </tr>
+                               <tr>
+                               	<td>03</td>
+                               	<td>Umair Ahmad</td>
+                               	<td>hashishah00@gmail.com</td>
+                               	<td><span class="bg-success">Active</span></td>
+                               	<td>
+                               		<a class="btn btn-sm bg-success" href="#"> <i class="fab fa-accessible-icon"></i> Previliges</a>
+                               		<a class="btn btn-sm  bg-warning" href="#"> <i class="fas fa-comments"></i> chat</a>
+                               		<a class="btn btn-sm bg-danger" href="#"> <i class="fas fa-user-lock"></i> Block</a>
+                               		
+                               	</td>
+                               </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
+              	<div class="col">
+              		<div class="card">
+              			<div class="card-body">
+              				<div class="card-img-top">
+              					<img src="#" class="img img-responsive">
+              				</div>
+              			</div>
+              			<div class="card-footer">Door Name</div>
+              		</div>
+              	</div>
+              	<div class="col">
+              		<div class="card">
+              			<div class="card-body">
+              				<div class="card-img-top">
+              					<img src="#" class="img img-responsive">
+              				</div>
+              			</div>
+              			<div class="card-footer">Door Name</div>
+              		</div>
+              	</div>
+              	<div class="col">
+              		<div class="card">
+              			<div class="card-body">
+              				<div class="card-img-top">
+              					<img src="#" class="img img-responsive">
+              				</div>
+              			</div>
+              			<div class="card-footer">Door Name</div>
+              		</div>
+              	</div>
+              </div>
+						</div>
+
+						<div id="deleteUser" class="tab-pane fade">
+							<br><br>
+							<form class="form deleteUserForm" action="#" method="POST">
+								<h1>Delete Doors:</h1>
+								<br><br>
+								<div class="form-group">
+									<label for="userSelect">Select a Door</label>
+									<select class="form-control">
+										<option value="1">Room Fan</option>
+										<option value="2">Room Light</option>
+										<option value="3">Store Fan</option>
+										<option value="4">Store Light</option>
+									</select>
+								</div>
+								<div class="form-group">
+									<input type="submit" name="submit" value="Delete Now" class="btn btn-lg bg-success">
+								</div>
+							</form>
+						</div> -->
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+<br><br><br>
+{%endblock%}

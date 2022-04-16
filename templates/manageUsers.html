@@ -1,0 +1,109 @@
+{%extends "base_layout.html"%}
+{%block content%}
+<br><br><br>
+<div class="container">
+	<h4 style="color: white;">Manage Users:	</h4>
+</div>
+<br>	
+<section class="container" id="navContainer">
+	<div class="row">
+		<div class="col-md-3"  id="sideNav">
+			<br>
+			<ul class="nav nav-pills hover">
+			    <li> 
+			    	<a class="btn btn-lg btn-primary" data-toggle="tab" href="#register"><span class="fav fav-add-user"> </span> Add User</a> 
+
+			    </li>
+			    <li>
+			    	<a class="btn btn-lg btn-primary" data-toggle="tab" href="#viewUsers" id="usersList"><span class="fav fav-add-user"> </span> View Users</a>
+			    </li>
+			    <li >
+			    	<a class="btn btn-lg btn-primary" data-toggle="tab" href="#deleteUser"><span class="fav fav-add-user"> </span> Delete User</a>
+			    </li>
+			</ul>
+
+		</div>
+		<div class="col-md-9" id="sideContent">
+			<div class="container">
+					<div class="tab-content">
+						<div id="register" class="tab-pane fade active show">
+							<br>
+							<h1 style="color: white;">Register an Account:</h1>
+							<br>
+							<form class="form addUserForm" name="userRegistrationForm" id="userRegistrationForm">
+								<div class="form-group">
+									<label for="firstName">First Name:</label>
+									<input type="text" name="firstName" class="form-control" id="firstName" required>
+								</div>
+
+								<div class="form-group">
+									<label for="lastName">Last Name:</label>
+									<input type="text" name="lastName" class="form-control" id="lastName" required>
+								</div>
+
+								<div class="form-group">
+									<label for="userEmail">Email:</label>
+									<input type="email" name="userEmail" class="form-control" id="userEmail" required>
+								</div>
+
+								<div class="form-group">
+									<label for="userPassword">Password:</label>
+									<input type="password" name="userPassword" class="form-control" id="userPassword" required>
+								</div>
+								<div class="form-group">
+									<button type="submit" class="btn btn-lg btn-success">SUBMIT</button>
+								</div>
+
+							</form>
+							<br>
+						</div>
+
+						<div id="viewUsers" class="tab-pane fade">
+							<br><br>
+							<div class="card" style="width: 100%;">
+                <div class="card-body">
+                    <div class="table-responsive m-t-40">
+                        <table id="example" class="display nowrap table table-responsive table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Name</th>
+                                    <th>Email</th>
+                                    <th>Status</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>    
+                            <tbody id="usersTable">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+              </div>
+						</div>
+
+						<div id="deleteUser" class="tab-pane fade">
+							<br><br>
+							<form class="form deleteUserForm" action="#" method="POST">
+								<h1>Delete Blocked Users:</h1>
+								<br><br>
+								<div class="form-group">
+									
+									<label for="userSelect">Select User</label>
+									<select class="form-group">
+										{% for dict_item in blockedUsers %}
+											<option value="{{dict_item.userId}}">{{dict_item.name}}</option>
+										{% endfor %}
+									</select>
+								</div>
+								<div class="form-group">
+									<input type="submit" name="submit" value="Delete Now" class="btn btn-lg bg-success">
+								</div>
+							</form>
+						</div>
+					</div>
+			</div>
+		</div>
+	</div>
+</section>
+{%endblock%}

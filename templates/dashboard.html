@@ -1,0 +1,125 @@
+{%extends "base_layout.html"%}
+{%block content%}
+<div class="container">
+	<div class="jumbotron">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="dashboardTabs">
+						<p><b>TOTAL USERS</b></p>
+						<span>{{session['userData']['totalUsers']}}</span>	
+					</div>
+					
+				</div>
+				<div class="col-md-3">
+					<div class="dashboardTabs">
+						<p><b>ACTIVE USERS</b></p>
+						<span>10</span>	
+					</div>
+					
+				</div>
+				<div class="col-md-3">
+					<div class="dashboardTabs">
+						<p><b>TOTAL LOADS</b></p>
+						<span>{{session['userData']['totalLoads']}}</span>	
+					</div>
+					
+				</div>
+
+				<div class="col-md-3">
+					<div class="dashboardTabs">
+						<p><b>ACTIVE LOADS</b></p>
+						<span>10</span>	
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="container operations">
+	<div class="row">
+		<div class="col-md-4">
+			<a href="{{url_for('manageUsers')}}">
+				<div class="operationsTabs">
+					<img src="#" class="img img-responsive">
+					<h5>Manage Users</h5>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-4">
+			<a href="{{url_for('manageLoads')}}">
+				<div class="operationsTabs">
+					<img src="#" class="img img-responsive">
+					<h5>Manage Loads</h5>
+				</div>
+			</a>
+		</div>
+		<div class="col-md-4">
+			<a href="{{url_for('manageAlerts')}}">
+				<div class="operationsTabs">
+					<img src="#" class="img img-responsive">
+					<h5>Manage Alerts</h5>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-4">
+			<a href="{{url_for('manageStream')}}">
+				<div class="operationsTabs">
+					<img src="#" class="img img-responsive">
+					<h5>Manage Stream</h5>	
+				</div>
+			</a>
+		</div>
+
+		<div class="col-md-4">
+			<a href="{{url_for('smartDoor')}}">
+				<div class="operationsTabs">
+					<img src="#" class="img img-responsive">
+					<h5>Smart Door</h5>	
+				</div>
+			</a>			
+		</div>
+
+		<div class="col-md-4">
+			<a href="{{url_for('userChats')}}">
+				<div class="operationsTabs">
+					<img src="#" class="img img-responsive">
+					<h5>Chats</h5>	
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<a href="{{url_for('voiceControl')}}">
+				<div class="operationsTabs">
+					<img src="#" class="img img-responsive">
+					<h5>Voice Controls</h5>	
+				</div>
+			</a>
+		</div>
+		<div class="col-md-4">
+			<a href="{{url_for('settings')}}">
+				<div class="operationsTabs">
+					<img src="#" class="img img-responsive">
+					<h5>Settings</h5>	
+				</div>
+			</a>
+		</div>
+		<div class="col-md-4">
+			<a href="{{url_for('history')}}">
+				<div class="operationsTabs">
+					<img src="#" class="img img-responsive">
+					<h5>History</h5>	
+				</div>
+			</a>
+		</div>
+	</div>	
+</section>
+{%endblock%}

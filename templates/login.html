@@ -1,0 +1,40 @@
+{%extends "base_layout.html"%}
+
+{%block content%}
+<section class="container-fluid">
+
+	<div class="row" style=" height: 100vh !important;">
+		<div class="col-sm text-center" style="background: black; color: white;">
+			<div class="clearfix">
+				<h1 class="display-3">WELCOME</h1>
+				<p>CV and IOT based Home Automation System</p>
+			</div>
+		</div>
+		<div class="col-sm" style="background: blue;">
+			<div class="clearfix">
+				<h1 style="color: white;">Login to your account:</h1>
+				<br>
+				<form class="form" action="{{url_for('loginUserAPI')}}" method="POST">
+					<div class="form-group">
+						<label for="userEmail">Email:</label>
+						<input type="email" name="userEmail" class="form-control" id="userEmail" required>
+					</div>
+
+					<div class="form-group">
+						<label for="userPassword">Password:</label>
+						<input type="password" name="userPassword" class="form-control" id="userPassword" required>
+					</div>
+
+					<div class="form-group">
+						<button type="submit" class="btn btn-success float-right">submit</button>
+					</div>
+				</form>
+				<br>
+				<br>
+				<p> Not Registered yet? <a href="{{url_for('registerUser')}}" style="color: white;">click here</a></p>
+			</div>
+		</div>
+	</div>
+	
+</section>
+{%endblock%}

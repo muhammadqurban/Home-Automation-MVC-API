@@ -1,0 +1,205 @@
+body{
+	background: #262638;
+}
+
+
+.clearfix{
+	margin-top:  12%;
+	padding-left:  10%;
+	padding-right: 10%;
+}
+
+
+.dashboardTabs{
+	margin-top: 3%;
+	margin-bottom: 3%;
+	color: white;
+	/*font-weight: bold;*/
+	background: blue;
+	padding: 10px;
+	border-radius: 10px;
+}
+.dashboardTabs > p{
+	margin-bottom: 2px;
+}
+.dashboardTabs > span{
+	display: block;
+	font-size: 2.5rem;
+	font-weight: 800;
+	text-align: right;
+}
+
+.operations{
+	text-align: center;
+	padding:4% 5%;
+}
+
+.operationsTabs{
+	border: 1px solid green;
+	padding: 20%;
+	margin: 3%;
+	color:  white;
+	cursor: pointer;
+}
+
+.operationsTabs:hover{
+	box-shadow: 10px 10px 10px black;
+}
+
+table{
+	cursor: pointer;
+	color: white !important;
+}
+
+footer{
+
+	background: black;
+	padding: 2%;
+	width: 100%;
+	color: white;
+	text-align: center;
+}
+
+#navContainer{
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+.list-group-item{
+	padding: 10%;
+	margin-top: 5% !important;
+	border: 1px solid gray !important; 
+
+}
+.list-group-item > a {
+	/*color: white;*/
+}
+
+.card{
+	/*border: none;*/
+}
+
+.card-body{
+
+    /*background: #262638;*/
+    color: black;
+
+}
+
+#example > thead {
+	color:  black !important;
+}
+
+#sideNav{
+	border-right: 1px solid black;
+	height: 70vh;
+}
+
+#sideNav > ul > li {
+	display: block;
+	width: 100%;
+	margin: 0.5rem 0rem;
+}
+#sideNav > ul > li > a {
+	width: 100%;
+	padding: 1.5rem 1rem ;
+}
+#sideContent{
+	padding-left: 2%;
+	padding-right: 2%;
+}
+.addUserForm{
+	color: white;
+}
+
+.deleteUserForm{
+	color: white;
+}
+
+#register{
+	/*display: block;*/
+}
+
+#chatsContainer {
+	height: 70vh;
+	border-right: 1px solid whitesmoke;
+	overflow-y: auto;
+	cursor: pointer;
+}
+
+#chatsContainer > div{
+	width: 100%;
+	border: 1px solid black;
+	padding: 10px;
+	margin-top: 15px;
+	box-shadow: 1px 4px 10px gray;
+	color: white;
+	text-align: right;
+}
+
+#chatsContainer > div > span {
+	float: left;
+}
+
+#chatsContainer > div:hover{
+	height: 100px;
+	font-weight: bolder;
+
+}
+
+.messagesContainer{
+	height: 60vh;
+	overflow-y: auto;
+	scroll-behavior: smooth;
+}
+.chatControls{
+
+}
+
+.chatControls > form {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.controlForm > div:nth-child(1){
+	width: 80%;
+}
+
+.controlForm > div:nth-child(2){
+	width: 20%;
+}
+.controlForm > div > input {
+	width: 100% !important;
+}
+
+
+.controlForm > div > button{
+	width: 100%;
+/*	padding-left: 100%;
+	padding-right: 100%;*/
+
+}
+
+.messageText{
+	background: dodgerblue;
+	padding: 10px 25px;
+	margin-left: 10px;
+	border:  1px solid black;
+	border-radius: 50px;
+
+}
+
+.text-left{
+	padding-top:  15px;
+}
+
+.text-right{
+	padding-top:  15px;
+}
+
+
+#usersTable{
+	color: black;
+}

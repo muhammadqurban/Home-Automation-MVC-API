@@ -1,0 +1,101 @@
+{%extends "base_layout.html"%}
+{%block content%}
+	<br><br><br>
+	<div class="container">
+		<h4 style="color: white;">Chats:	</h4>
+	</div>
+	<br>	
+	<section class="container" id="navContainer">
+		<div class="row">
+			<div class="col-md-3" id="chatsContainer">
+				
+					<div>
+						<span style="float: left;">
+							<img src="#" class="img img-circle">
+						</span>
+						 &nbsp; &nbsp;
+						<div style="text-align: right;">
+							<span>
+								Hazrat Umer
+							</span><br>
+							<span>Date: <i>07/08/2021</i></span>
+						</div>
+						
+						
+					</div>
+
+					<div>
+
+						<span style="float: left;">
+							<img src="#" class="img img-circle">
+						</span>
+						 &nbsp; &nbsp;
+						<div style="text-align: right;">
+							<span>
+								Hazrat Umer
+							</span><br>
+							<span>Date: <i>07/08/2021</i></span>
+						</div>
+
+					</div>
+
+					<div>
+						<span style="float: left;">
+							<img src="#" class="img img-circle">
+						</span>
+						 &nbsp; &nbsp;
+						<div style="text-align: right;">
+							<span>
+								Hazrat Umer
+							</span><br>
+							<span>Date: <i>07/08/2021</i></span>
+						</div>
+					</div>
+					
+			</div>
+			<div class="col-md-9" id="sideContent">
+				<div class="container">
+						<div class="tab-pane fade active show" style="color: white;">
+								<br>
+								<h5>Chat with: Hazrat Umer</h5>
+								<hr style="border-bottom: 1px solid white;">
+								<div class="messagesContainer">
+									<br>
+									<p class="text-left">
+										<span class="messageText">Hi there</span>
+									</p>
+									
+									<p class="text-right">
+										<span class="messageText">Hello</span>
+									</p>
+
+									<p class="text-left">
+										<span class="messageText">How are you?</span>
+									</p>
+									
+									<p class="text-right">
+										<span class="messageText">I am fine thank you..</span>
+									</p>
+
+
+								</div>
+
+								<div class="chatControls">
+									<form class="form form-inline controlForm">
+										<div class="form-group">
+											<input type="text" name="messageText" class="form-control">
+										</div>
+										<div class="form-group">
+											<button type="submit" class="btn bg-success">Send</button>
+										</div>
+									</form>
+								</div>
+								<br>
+							</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<br><br><br>
+
+{%endblock%}
